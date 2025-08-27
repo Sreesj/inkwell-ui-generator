@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				mono: ['JetBrains Mono', 'Fira Code', 'Consolas', 'monospace'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -52,16 +55,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+				'panel': 'hsl(var(--panel-background))',
+				'panel-border': 'hsl(var(--panel-border))',
+				'code-bg': 'hsl(var(--code-background))',
+				'sketchpad-bg': 'hsl(var(--sketchpad-background))',
+				'accent-purple': 'hsl(var(--accent-purple))',
+				'accent-blue': 'hsl(var(--accent-blue))',
+				'success': 'hsl(var(--success))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
